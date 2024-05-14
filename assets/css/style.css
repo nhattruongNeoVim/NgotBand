@@ -181,6 +181,11 @@ section {
 }
 
 #substore .images-list .item .img {
+    display: flex;
+    justify-content: center;
+}
+
+#substore .images-list .item .img img {
     width: 300px;
     border: 2px solid #fff;
     border-radius: 25px;
@@ -188,7 +193,7 @@ section {
 
 #substore .images-list .item strong {
     color: black;
-    font-size: 40px;
+    font-size: 32px;
     font-style: italic;
     font-weight: 900;
     word-wrap: break-word;
@@ -197,9 +202,17 @@ section {
 #substore .images-list .item p {
     text-align: right;
     color: black;
-    font-size: 32px;
+    font-size: 22px;
     font-weight: 600;
     word-wrap: break-word;
+}
+
+/*
+    Start MV
+*/
+
+#mv {
+    height: 100vh;
 }
 
 /* Start tour */
