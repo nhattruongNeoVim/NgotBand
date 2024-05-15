@@ -103,6 +103,141 @@ section {
     margin-right: 10px;
 }
 
+/*
+    Banner
+*/
+
+#baner {
+    margin-top: 80px;
+}
+
+#banner-contents {
+    margin-top: 80px;
+    height: 91vh;
+    width: 100%;
+    position: relative;
+    background: linear-gradient(90deg, #f00 49%, rgba(255, 0, 0, 0) 100%);
+}
+
+#banner-contents .banner-content-background {
+    z-index: -1;
+    position: absolute;
+    right: 0;
+}
+
+#banner-contents .content-img {
+    width: 100%;
+    object-fit: cover;
+    height: 91vh;
+    background-repeat: no-repeat;
+    /* opacity: 0; */
+    animation: zoomIn 3s ease-in;
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#banner-contents .banner__section {
+    position: absolute;
+    padding: 0 30px;
+    font-style: italic;
+}
+
+#banner-contents .banner__section-title {
+    display: block;
+    font-weight: 900;
+    font-size: 90px;
+}
+
+#banner-contents .banner__section-dirs {
+    /* text-align: center */
+    color: #222;
+    margin-left: 280px;
+    font-weight: 100;
+    font-size: 50px;
+}
+
+.banner-list-music {
+}
+
+.banner__list--music-item {
+    margin-top: 20px;
+    height: 80px;
+    width: 700px;
+}
+
+.banner__list--music-item-btn {
+    padding: 20px;
+    background-color: #f00;
+    border: none;
+    /* display: block; */
+    width: 100%;
+    text-align: left;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.banner__list--music-item:hover {
+    opacity: 0.8;
+}
+
+.banner__list--music-item .music-icon {
+    font-size: 40px;
+}
+
+.music-item-title {
+    font-size: 30px;
+    line-height: 40px;
+    margin-left: 30px;
+    font-weight: 500;
+}
+
+.baner__btn-music {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 10px;
+}
+
+.baner__btn-action:hover {
+    opacity: 1;
+}
+
+.baner__btn-action {
+    font-size: 18px;
+    padding: 12px 28px;
+    background-color: #000;
+    text-decoration: none;
+    color: #f00;
+    border-radius: 20px;
+    opacity: 0.8;
+}
+
+.baner__btn-arrow {
+    margin-top: 20px;
+}
+
+.baner__btn-more {
+    display: block;
+    font-size: 14px;
+    font-weight: 100;
+    color: #333;
+    /* text-align: center */
+}
+
+.baner__btn-more-icon {
+    /* margin-top: 10px ; */
+    bottom: 0;
+}
+
 /* Start substore */
 #substore {
     margin-top: 80px;
