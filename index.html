@@ -5,39 +5,41 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <title>Ngọt - Trang chủ</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/img/logo/web.png">
+
 </head>
 
 <body>
     <div id="header">
         <ul id="nav">
-            <li><a href="">Home</a></li>
-            <li><a href="">Category</a></li>
-            <li><a href="">Music</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cart.php">Category</a></li>
+            <li><a href="login.php">Music</a></li>
         </ul>
 
         <div class="absolute-center">
-            <a href="" class="header-logo-link">
-                <img src="./assets/img/logo/logo_transparent.png" alt="Band | Shop logo" class="header-logo" />
+            <a href="index.html" class="header-logo-link">
+                <img src="./assets/img/logo/logo.png" alt="Band | Shop logo" class="header-logo" />
             </a>
         </div>
 
         <div id="social-list">
-            <a href=""><i class="fa-brands fa-facebook"></i></a>
-            <a href=""><i class="fa-brands fa-youtube"></i></a>
-            <a href=""><i class="fa-solid fa-music"></i></a>
-            <a href=""><i class="fa-brands fa-spotify"></i></a>
-            <a href=""><i class="fa-solid fa-user"></i> </a>
+            <a href="https://www.facebook.com/bannhacngot"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.youtube.com/c/Ngọtband"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://music.apple.com/us/artist/ngọt/1291453081"><i class="fa-solid fa-music"></i></a>
+            <a href="https://open.spotify.com/artist/0V2DfUrZvBuUReS1LFo5ZI"><i class="fa-brands fa-spotify"></i></a>
+            <a href="login.php"><i class="fa-solid fa-user"></i> </a>
         </div>
     </div>
 
     <section>
         <div id="banner-contents">
             <div class="banner-content-background">
-                <img class="content-img" src="./assets/img/banner/img1.png" alt="">
+                <img class="content-img" src="./assets/img/index_main/main.png" alt="">
             </div>
             <div class="banner__section">
                 <span class="banner__section-title">Suýt 1</span>
@@ -45,29 +47,29 @@
 
                 <div class="banner__list">
                     <div class="banner__list--music-item">
-                        <button class="banner__list--music-item-btn">
-                            <i class="music-icon fa-regular fa-circle-play"></i>
+                        <button class="banner__list--music-item-btn" id="playMusic1">
+                            <i class="music-icon fa-regular fa-circle-play" id="icon1"></i>
                             <span class="music-item-title">01 Chuyện Dở Dang</span>
                         </button>
                     </div>
 
                     <div class="banner__list--music-item">
-                        <button class="banner__list--music-item-btn">
-                            <i class="music-icon fa-regular fa-circle-play"></i>
+                        <button class="banner__list--music-item-btn" id="playMusic2">
+                            <i class="music-icon fa-regular fa-circle-play" id="icon2"></i>
                             <span class="music-item-title">02 Mơ Làm Ma</span>
                         </button>
                     </div>
 
                     <div class="banner__list--music-item">
-                        <button class="banner__list--music-item-btn">
-                            <i class="music-icon fa-regular fa-circle-play"></i>
+                        <button class="banner__list--music-item-btn" id="playMusic3">
+                            <i class="music-icon fa-regular fa-circle-play" id="icon3"></i>
                             <span class="music-item-title">03 Hay Là</span>
                         </button>
                     </div>
 
                     <div class="banner__list--music-item">
-                        <button class="banner__list--music-item-btn">
-                            <i class="music-icon fa-regular fa-circle-play"></i>
+                        <button class="banner__list--music-item-btn" id="playMusic4">
+                            <i class="music-icon fa-regular fa-circle-play" id="icon4"></i>
                             <span class="music-item-title">04 Thắp Hương 05 Hoá Vàng</span>
                         </button>
                     </div>
@@ -75,7 +77,7 @@
             </div>
         </div>
         <div class="baner__btn-music">
-            <a href="" class="baner__btn-action">Nghe ngay</a>
+            <a href="login.php" class="baner__btn-action">Nghe ngay</a>
             <div class="baner__btn-arrow">
                 <span class="baner__btn-more">Learn more</span>
                 <i class="baner__btn-more-icon fa-solid fa-angles-down"></i>
@@ -88,48 +90,48 @@
         <div class="head">
             <h1 class="headl">Store</h1>
             <div class="headc"></div>
-            <a class="headr" href="./">Shop Official Store</a>
+            <a class="headr" href="cart.php">Shop Official Store</a>
         </div>
         <div class="wrap-img-item">
             <div class="images-list">
-                <a class="item" href="#">
+                <a class="item" href="cart_cd.php">
                     <div class="img">
-                        <img src="./assets/img/album/album-1.png" alt="image" />
+                        <img src="./assets/img/index_shop/album-1.png" alt="image" />
                     </div>
                     <strong>Ngọt</strong>
                     <p>150.000đ</p>
                 </a>
-                <a class="item" href="#">
+                <a class="item" href="cart_cd.php">
                     <div class="img">
-                        <img src="./assets/img/album/album-2.png" alt="image" />
+                        <img src="./assets/img/index_shop/album-2.png" alt="image" />
                     </div>
                     <strong>Ng'bthg</strong>
                     <p>280.000đ</p>
                 </a>
-                <a class="item" href="#">
+                <a class="item" href="cart_cd.php">
                     <div class="img">
-                        <img src="./assets/img/album/album-3.png" alt="image" />
+                        <img src="./assets/img/index_shop/album-3.png" alt="image" />
                     </div>
                     <strong>3(tuyển tập nhạc ... </strong>
                     <p>300.000đ</p>
                 </a>
-                <a class="item" href="#">
+                <a class="item" href="cart_cd.php">
                     <div class="img">
-                        <img src="./assets/img/album/album-4.png" alt="image" />
+                        <img src="./assets/img/index_shop/album-4.png" alt="image" />
                     </div>
                     <strong>Gieo</strong>
                     <p>390.000đ</p>
                 </a>
-                <a class="item" href="#">
+                <a class="item" href="cart_cd.php">
                     <div class="img">
-                        <img src="./assets/img/album/album-5.png" alt="image" />
+                        <img src="./assets/img/index_shop/album-5.png" alt="image" />
                     </div>
                     <strong>Suýt 1</strong>
                     <p>300.000đ</p>
                 </a>
-                <a class="item" href="#">
+                <a class="item" href="cart_cd.php">
                     <div class="img">
-                        <img src="./assets/img/album/album-6.png" alt="image" />
+                        <img src="./assets/img/index_shop/album-6.png" alt="image" />
                     </div>
                     <strong>Cái đầu tiên</strong>
                     <p>250.000đ</p>
@@ -138,7 +140,36 @@
         </div>
     </section>
 
-    <section id="mv"></section>
+    <section id="mv">
+        <video autoplay muted>
+            <source src="./assets/video/index_video/mv.mp4">
+        </video>
+        <div class="blur"></div>
+        <div class="mv-content">
+            <h1>MV Ngọt</h1>
+            <div class="layout">
+                <div class="btn-list btn-list1">
+                    <a href="https://youtu.be/-6s_eRHYqVM" class="btn-mv"><i class="fa-solid fa-video"></i>Em dạo
+                        này</a>
+                    <a href="https://youtu.be/ECZVU4x6Xq0" class="btn-mv"><i class="fa-solid fa-video"></i>Chuyển
+                        kênh</a>
+                </div>
+                <div class="btn-list btn-list2">
+                    <a href="https://youtu.be/kSjj0LlsqnI" class="btn-mv"><i class="fa-solid fa-video"></i>Lần cuối</a>
+                    <a href="https://youtu.be/LvNEPB5x7T8" class="btn-mv"><i class="fa-solid fa-video"></i>Mấy khi</a>
+                </div>
+                <div class="btn-list btn-list3">
+                    <a href="https://youtu.be/KypuJGsZ8pQ" class="btn-mv"><i class="fa-solid fa-video"></i>Em trang
+                        trí</a>
+                    <a href="https://youtu.be/9mA7h1jfxc8" class="btn-mv"><i class="fa-solid fa-video"></i>Thấy chưa</a>
+                </div>
+                <div class="btn-link">
+                    <a href="https://www.youtube.com/channel/UCuKWFCkVDNzcFy5JGeJFrOw">Xem ngay <i
+                            class="fa-solid fa-angles-right"></i> </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section id="tour-section">
         <h1 class="tour-name">Tour</h1>
@@ -150,10 +181,11 @@
                         <h3 class="des">Cam GALA</h3>
                     </td>
                     <td>
-                        <a href="#" class="place-wide">Nhà thi đấu Nguyễn Du, TP.HCM</a>
+                        <a href="https://maps.app.goo.gl/B2yh5BVySBUHa59u8" class="place-wide">Nhà thi đấu Nguyễn Du,
+                            TP.HCM</a>
                     </td>
                     <td>
-                        <a href="#" class="place-buy-btn">Mua vé</a>
+                        <a href="https://8thetheatre.com/tc-events/camgalai-sg0604/" class="place-buy-btn">Mua vé</a>
                     </td>
                 </tr>
                 <tr>
@@ -162,10 +194,11 @@
                         <h2 class="des">Cam GALA</h2>
                     </td>
                     <td>
-                        <a href="#" class="place-wide">Hà Nội</a>
+                        <a href="https://maps.app.goo.gl/b1PSYFiZHm3dznew6" class="place-wide">Hà Nội</a>
                     </td>
                     <td>
-                        <a href="#" class="place-buy-btn">Mua vé</a>
+                        <a href="https://ticketbox.vn/event/ntpmmhanoi-2024-89508?opm=tbox.home.hot.3"
+                            class="place-buy-btn">Mua vé</a>
                     </td>
                 </tr>
                 <tr>
@@ -174,10 +207,11 @@
                         <h2 class="des">Những thành phố Mơ Màng</h2>
                     </td>
                     <td>
-                        <a href="#" class="place-wide">Đà nẵng</a>
+                        <a href="https://maps.app.goo.gl/tqdEQvsjUgS2W9t8A" class="place-wide">Đà nẵng</a>
                     </td>
                     <td>
-                        <a href="#" class="place-buy-btn">Mua vé</a>
+                        <a href="https://ticketbox.vn/event/ntpmmdanang-2024-89510?opm=tbox.home.hot.4"
+                            class="place-buy-btn">Mua vé</a>
                     </td>
                 </tr>
                 <tr>
@@ -186,65 +220,101 @@
                         <h2 class="des">Những thành phố Mơ Màng</h2>
                     </td>
                     <td>
-                        <a href="#" class="place-wide">TP.HCM</a>
+                        <a href="https://maps.app.goo.gl/w7yYUXwLW7ysMsk8A" class="place-wide">TP.HCM</a>
                     </td>
                     <td>
-                        <a href="#" class="place-buy-btn">Mua vé</a>
+                        <a href="https://ticketbox.vn/event/ntpmmhochiminh-2024-89509?opm=tbox.home.hot.6"
+                            class="place-buy-btn">Mua vé</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h1 class="date">15/06/2024</h1>
+                        <h2 class="des">Những thành phố Mơ Màng</h2>
+                    </td>
+                    <td>
+                        <a href="https://maps.app.goo.gl/w7yYUXwLW7ysMsk8A" class="place-wide">TP.HCM</a>
+                    </td>
+                    <td>
+                        <a href="https://ticketbox.vn/event/ntpmmhochiminh-2024-89509?opm=tbox.home.hot.6"
+                            class="place-buy-btn">Mua vé</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h1 class="date">15/06/2024</h1>
+                        <h2 class="des">Những thành phố Mơ Màng</h2>
+                    </td>
+                    <td>
+                        <a href="https://maps.app.goo.gl/w7yYUXwLW7ysMsk8A" class="place-wide">TP.HCM</a>
+                    </td>
+                    <td>
+                        <a href="https://ticketbox.vn/event/ntpmmhochiminh-2024-89509?opm=tbox.home.hot.6"
+                            class="place-buy-btn">Mua vé</a>
                     </td>
                 </tr>
             </tbody>
         </table>
     </section>
 
-    <section id="footer">
-        <div class="fleft">
-            <h1>About Ngọt</h1>
-            <ul>
-                <li><a href="">Thông tin</a></li>
+    <div id="footer">
+        <div class="footer__heading">
+            <span class="footer__heading-instro">About Ngọt</span>
+            <span class="footer__heading-notify">Đăng ký đã được cập nhật</span>
+        </div>
+        <div class="footer__body">
+            <ul class="footer__body-disciption">
+                <li><a href="intro.html">Thông tin</a></li>
                 <li><a href="">Thành viên</a></li>
-                <li><a href="">Album</a></li>
-                <li><a href="">Shop</a></li>
-                <li><a href="">Câu hỏi thường gặp</a></li>
+                <li><a href="album.html">Album</a></li>
+                <li><a href="cart.php">Shop</a></li>
+                <li><a href=""> Câu hỏi thường gặp</a></li>
                 <li><a href="">Liên hệ</a></li>
             </ul>
-        </div>
-        <div class="fgiua">
-            <p>Địa chỉ Hà Nội</p>
-            <p>Hotline:090 219 58 07 Email: hoangvp102@gmail.com</p>
-            <p>
-                GPKD số 01D8051722 cấp ngày 12/10/2023 tại UBND quận Hai Bà
-                Trưng
-            </p>
-            <img src="https://forci.vn/Pictures/dathongbao.jpg" width="25%" />
-        </div>
 
-        <div class="fright">
-            <h2>Đăng ký để nhận được cập nhật</h2>
-            <input class="email" type="text" name="Email" placeholder="Email" />
-            <button class="submit" type="submit">Đăng kí</button>
-        </div>
-
-        <div class="fbottom">
-            <a href=""><i class="fa-brands fa-facebook"></i></a>
-            <a href=""><i class="fa-brands fa-youtube"></i></a>
-            <a href=""><i class="fa-solid fa-music"></i></a>
-            <a href=""><i class="fa-brands fa-spotify"></i></a>
-
-            <p>@2024 Lâm Huỳnh</p>
-            <ul>
-                <li><a href="">Terms</a></li>
-                <li><a href="">Privacy</a></li>
-                <li><a href="">Cookie choices</a></li>
-                <li>
-                    <a href="">Do not sell or share my personal information</a>
-                </li>
+            <ul class="footer__body-disciption">
+                <li>Địa chỉ Hà Nội</li>
+                <li>Hotline: 098 241 5384 </li>
+                <li>Email: hoangvp102@gmail.com</li>
+                <li>GPKD số 01D8051722 cấp ngày 12/10/2023 tại UBND quận Hai Bà Trưng</li>
+                <li><img src="./assets/img/footer/footer.png" class="footer__body-disciption--img" alt=""></li>
             </ul>
-            <p>
-                IF YOU ARE USING A SCREEN READER AND ARE HAVING PROBLEMS
-                USING THIS WEBSITE, PLEASE CALL 0935288971 FOR ASSISTANCE.
-            </p>
+
+            <div class="footer__body-subscribe">
+                <input class="footer__body-subscribe-input" type="text" placeholder="Email">
+                <button class="footer__body-subscribe-btn" type="submit">Đăng ký</button>
+            </div>
         </div>
-    </section>
+
+        <div class="footer__special">
+            <div class="footer__special-list">
+                <a href="https://www.facebook.com/bannhacngot"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.youtube.com/c/Ngọtband"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://music.apple.com/us/artist/ngọt/1291453081"><i class="fa-solid fa-music"></i></a>
+                <a href="https://open.spotify.com/artist/0V2DfUrZvBuUReS1LFo5ZI"><i
+                        class="fa-brands fa-spotify"></i></a>
+            </div>
+            <div class="footer__special--dicrip">
+                <span class="footer__special-title">@2024 powered by <a href="">Lâm Huỳnh</a></span>
+
+                <ul class="footer__special--label">
+                    <li>Terms</li>
+                    <li>Privacy</li>
+                    <li>Cookie choices</li>
+                    <li>Do not sell or share my personal information</li>
+                </ul>
+            </div>
+            <footer class="footer__title-dir">
+                <span>IF YOU ARE USING A SCREEN READER AND ARE HAVING PROBLEMS USING THIS WEBSITE, PLEASE CALL
+                    0935388971 FOR ASSISTANCE.</span>
+            </footer>
+        </div>
+
+    </div>
+</div>
+
+    <script src="./assets/js/index.js"></script>
+
 </body>
 
 </html>

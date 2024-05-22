@@ -2,6 +2,10 @@
     General layout
 */
 
+html {
+    background-color: #000;
+}
+
 a {
     text-decoration: none;
     color: #000;
@@ -265,7 +269,11 @@ a {
     margin: auto;
 }
 
-#music-content .title h2 {
+#music-content #title {
+    height: 14%;
+}
+
+#music-content #title strong {
     color: black;
     font-size: 20px;
     font-family: Inter;
@@ -273,7 +281,7 @@ a {
     word-wrap: break-word
 }
 
-#music-content .title p {
+#music-content #title p {
     color: black;
     font-size: 16px;
     font-family: Inter;
@@ -288,22 +296,9 @@ a {
 }
 
 #music-content .player {
-    height: 36%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-#music-content .player .icon-pause {
-    display: none;
-}
-
-#music-content .player.playing .icon-pause {
-    display: inline-block;
-}
-
-#music-content .player.playing .icon-play {
-    display: none;
 }
 
 #music-content .control {
@@ -317,6 +312,7 @@ a {
     color: #666;
     padding: 18px;
     font-size: 18px;
+    cursor: pointer;
 }
 
 #music-content .control .btn.active {
@@ -333,6 +329,7 @@ a {
     align-items: center;
     justify-content: center;
     background-color: #ec1f55;
+    padding: 18px;
 }
 
 
@@ -350,11 +347,22 @@ a {
 #music-content .progress::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 12px;
-    height: 6px;
-    background-color: var(--primary-color);
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #ec1f55;
     cursor: pointer;
 }
+
+.timer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #999;
+    margin: 20px 0;
+}
+
 
 #lyrics-box {
     height: 60%;
