@@ -827,11 +827,11 @@ footer {
 
 .footer-text-link {
     font-family: Inter;
-    font-size: 16px;
     font-style: italic;
     font-weight: 200;
     line-height: normal;
     color: #999;
+    font-size: 14px;
     text-align: center;
 }
 
@@ -854,24 +854,4 @@ footer {
 
 .footer-info p {
     color: #999;
-}
-
-footer .copyright {
-    padding: 14px 0;
-    display: flex;
-    justify-content: center;
-    background-color: #fff;
-    border-bottom-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-}
-
-footer .copyright a,
-footer .copyright p {
-    font-size: 14px;
-}
-
-footer .copyright a {
-    padding-left: 6px;
-    text-decoration: none;
-    color: #000;
 }
