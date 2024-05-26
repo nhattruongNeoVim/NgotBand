@@ -149,7 +149,7 @@ right_scroll.addEventListener("click", () => {
 });
 
 Array.from(document.getElementsByClassName("mv-item")).forEach((element, i) => {
-    element.getElementsByTagName("img")[0].src = songs[i].poster;
+    // element.getElementsByTagName("img")[0].src = songs[i].poster;
     element.getElementsByClassName("mv-item-content")[0].innerHTML =
         songs[i].songName;
 });
