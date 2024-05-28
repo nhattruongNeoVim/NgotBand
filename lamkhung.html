@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ngọt - Nhạc</title>
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/lamkhung.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/img/logo/web.png" />
+</head>
+
+<body>
+    <div id="main">
+        <div id="left">
+            <div id="sidebar">
+                <div id="sidebar-top">
+                    <div class="logo">
+                        <a href="index.html"><img src="./assets/img/logo/logo.png" alt="img" /></a>
+                    </div>
+                    <ul>
+                        <li>
+                            <button id="btn-home" type="submit">
+                                <a href="#"><i class="icon fa-solid fa-house fa-xl"></i>
+                                    <h5>Home</h5>
+                                </a>
+                            </button>
+                        </li>
+                        <li>
+                            <button id="btn-search" type="submit">
+                                <a href="#"><i class="icon fa-solid fa-magnifying-glass fa-xl"></i>
+                                    <h5>Search</h5>
+                                </a>
+                            </button>
+                        </li>
+                        <li>
+                            <button id="btn-library" type="submit">
+                                <a href="#"><i class="icon fa-solid fa-lines-leaning fa-xl"></i>
+                                    <h5>Library</h5>
+                                </a>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div id="sidebar-bottom">
+                    <div class="playlist-head">
+                        <a class="playlist-headl" href="#">
+                            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                        </a>
+                        <a class="playlist-headr" href="#">
+                            <h4>Gần đây</h4>
+                            <i class="fa-solid fa-list" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div class="icon">
+                                    <i class="fa-solid fa-heart fa-xl"></i>
+                                </div>
+                                <h5>
+                                    Bài hát đã thích
+                                    <div class="subtitle">
+                                        Danh sách phát . 32 bài hát
+                                    </div>
+                                </h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./assets/img/music/album-1.png" alt="img" />
+                                <h5>
+                                    Màu
+                                    <div class="subtitle">16 bài hát</div>
+                                </h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./assets/img/music/album-3.png" alt="img" />
+                                <h5>
+                                    Em có chắc không
+                                    <div class="subtitle">1067 bài hát</div>
+                                </h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./assets/img/music/album-5.png" alt="img" />
+                                <h5>
+                                    Chuông báo thức (sáng rồi)
+                                    <div class="subtitle">32 bài hát</div>
+                                </h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="icon">
+                                    <i class="fa-solid fa-car fa-xl"></i>
+                                </div>
+                                <h5>
+                                    Drive
+                                    <div class="subtitle">Alan Walker</div>
+                                </h5>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="center">
+            <div id="layout">
+                <div id="content">
+                    <div id="header">
+                        <div id="h-left">
+                            <ul>
+                                <li><a href="#">New in</a></li>
+                                <li><a href="#">Tranding</a></li>
+                                <li><a href="#">Recommended</a></li>
+                            </ul>
+                        </div>
+                        <div id="h-right">
+                            <div class="first-item">
+                                <input type="text" placeholder="Search..." class="input-field" />
+                                <i class="icon fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <a class="second-item" href="#">
+                                <i class="fa-solid fa-bell"></i>
+                            </a>
+                            <a class="last-item" href="#">
+                                <img src="./assets/img/user/lamhuynh.png" alt="user" />
+                            </a>
+                        </div>
+                    </div>
+                    <div id="banner">
+                        <div class="banner-background">
+                            <h1>HIT</h1>
+                            <img src="https://s3-alpha-sig.figma.com/img/5858/6e99/a3e0fe50e5dc78fd2ccdcce8970fbec5?Expires=1717977600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=S4KNI5a9NIcyygQZLHz5rdgIan89ueQrge2TqFzIujvg5kQz8FWs~2OTFJP1qIcg0VgF-tQf-SR-gKjE2AFnMitpAH3~lOgH9XTBaA0hAoH0Bq7PS1GPMT0RwgD0CWZ~-eV~m1o0TcM-c0Y6UjCTVoQoWU6U8nQdTMw7enYze3dJqZ38aSqu4mABfvhaS-s2O9lieZA4RCpHCVAjaSa3vowisk7qTIi3AqmOKXMazIzVaOXnl6oqGz3pxQu1NA79-sri~uYJsXgjemk8tX6VaTt~IlRxxKE7N-YnKwVySr7SrdeXPIuq0VhukuwZiCzZhIADtgWR6p0jiFngRxwooA__"
+                                alt="img" />
+                        </div>
+                    </div>
+
+                    <div id="album">
+                        <h1 class="section-title">Album</h1>
+                        <div class="list-item">
+                            <div class="item">
+                                <img
+                                    src="https://s3-alpha-sig.figma.com/img/0dce/7ff2/9c4a058c0d6dae698b3b15ebd36361a7?Expires=1717977600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Uc5bOPhtajcHCfQvBfCjX~o4MBrO6weSWWJ80w5QLeNhNfDpX3l57ojzy9808Eam9S9FcFIki6pZdQn6YEPuHgx~lcgqRB-9UpLTws-3do5Q8VTMjen0VxkjbyIPP~AdK~5iGbbVXmX1cqwT1pkFlvQ4Rx1FysN3vEXNVRn0qTb5LuHOY1TYspIJTRI7vVcpYPFg3JQx6-TnG3MYvkFOKwokALS86VkC9-8viP-ghCVZqEOcHL958PcQZZR9Rb5V6OYZ3rN4ZSfT8CCO3ceESVOWX-vWT3ibrEPFLXj4GJKZAJ65IEJAArfG3f9B7hall3tjBoG5KiLho2SxN18dgA__" />
+                                <div class="item-title">
+                                    <h1>Ngọt</h1>
+                                    <p>2016</p>
+                                </div>
+                                <p class="item-author">Ngọt</p>
+                            </div>
+                            <div class="item">
+                                <img
+                                    src="https://s3-alpha-sig.figma.com/img/fb9c/680a/175113c49a9df70257bb1d80842af8e6?Expires=1717977600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=a~HHSPMpv6aFxfPk0NEY-nHbavvhkdI2YfX0Gkilrl-G~4w--HT3FOcHrPsLh1Wewz62UpyJXacbs9cj~h0rsgiP6KLOi4Vhq2DLKdm-6sYX6TjX~~vnfyijkJkYgY3KsDuC3Z6WcGOMhgR0AqXpmy4gjyNjeOs9Hd2NctxqOU80gAKSwLQlBQS6MvE9qO7oGBnF1IbdOZK3apxtVGhJBlFT1Gp~lS5Dx0WOStEUnno-3KyS3UZpO534SmCJElc2XZHw1h7fH85VLFw1UdfBRQFebWrJDSDVQUYAi5Yq4tujKMi1NuQ8eKDC6ZLJuPFhVbQmqwTnJcuHyHobGuy3Rg__" />
+                                <div class="item-title">
+                                    <h1>Ng’bthg</h1>
+                                    <p>2018</p>
+                                </div>
+                                <p class="item-author">Ngọt</p>
+                            </div>
+                            <div class="item">
+                                <img
+                                    src="https://s3-alpha-sig.figma.com/img/6d94/d673/e2311d8ea08fa78dc14790883b060423?Expires=1717977600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=f51WKTKU8pOILz20VM~RMiRklazLxGMEgXqlkHez4N69KoUkN8c8JyZzUpZ~qY8h2K7KaJk6FSAuqunxe9sNhBVIPpLHFBOjw3RQW69HER8X-DrzI1BqRVYLjpdrma9UtMYHyN592SsE~l~jPtqrE~0eOyHkcrkeBO4HWzNSCFqy-LgM3BJyVvhB81MuOVGgtDd4EJZ1277Dlz0~dqTkRD3FjeVJ~nL~6Aw2zDRn62-gB3VrtGPKAubzY2xuQcl8PA2~LJgKSdEPThNZnVBZDvX~64nI3U7NPHNaFTRR~CD-JkMtZjLqHosQSE6ByAKGLEUIIEQV1~LjcnI3CUSj9Q__" />
+                                <div class="item-title">
+                                    <h1>3 (tuyển tập nhạc ngọt mới trả sôi động 2019)</h1>
+                                    <p>2019</p>
+                                </div>
+                                <p class="item-author">Ngọt</p>
+                            </div>
+                            <div class="item">
+                                <img
+                                    src="https://s3-alpha-sig.figma.com/img/1558/8164/072165c307177f0e6b8624ec51af847e?Expires=1717977600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=HXCvS3mvfq-y~Egt~mWN8MnlhaFba2yrtgPN4mUOhLwCD~H8b~QMsDy7g5zfJkO4rkaCELrnmOzm1WgBf04U6zVctr~wXq2-S-Rr8B37B1NTgrbCjUvxoLGfgL9MAayBA7fR33AOm0le7tvGNV7pjfC80QP8iNG3Yc47a8gv8jD9Has9q6kwrIW95EorRXslxQAol0mCKR8Hp4N0t~jH0sFB9fw1elJaQgb1wJWrWu2CDmYqyDoGIY2zFGzG8kq0HAmhvl7mmFI9fnYWW0xAUm14YeQV0zzF59TyBMnb9Sgb9g6QjiQE-1qAt0fgH7KwjfWH06xHkSFx5qrLDIFwfw__" />
+                                <div class="item-title">
+                                    <h1>CNGĐC</h1>
+                                    <p>2019</p>
+                                </div>
+                                <p class="item-author">Ngọt</p>
+                            </div>
+                            <div class="item">
+                                <img
+                                    src="https://s3-alpha-sig.figma.com/img/0cc7/8e68/21872040ec98ce066aaac978e30bc324?Expires=1717977600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Y2Yn6HDNaWhf8795bCQWE1ODCq5uzlQlDQ6Q95gNOJOaCzn~GoynEUz18BCr2ciZQy7l1jaM0T3h3p5aRGtVV2MpSmHxZ9wK9XZTEzl7IZFrUcdw4Rg9d0L-Sc9ZFvVAfYZN7tcDpNSplm~Ox1J9vCeazBsJ2XcWRt6yu8Tvr3Dl8On6rxnO5WM~v~DZUTxHIv883hOKnSzn-gZ2FLtzLSaN3yr52h5HOxr6BI8r89DHxbYndd0nXgLHHD-A8n-vzD1k7aIkFth1G9xGRGIwDF0sKVWYsRPc0njz1mgB-JoYj~eilAbT5s3QaYPEa2S~wMkwytKjFqAStFubEvTDTw__" />
+                                <div class="item-title">
+                                    <h1>Ở Đài Truyền Hình</h1>
+                                    <p>2021</p>
+                                </div>
+                                <p class="item-author">Ngọt</p>
+                            </div>
+                            <div class="item">
+                                <img
+                                    src="https://s3-alpha-sig.figma.com/img/0ae4/a05a/4777ac297a784756461a39027bbe3e1f?Expires=1717977600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=AgWBNWn2N3waIeYRMuVj49sVLc0e3F72eJ7ilmE34rPsEVIJ7EoBsXKrkWFGeIPDmpmkkABSSVCXuFuES86vFQpBXpxear85eZrxR-uO3Itsywpmkcm3yrHKv5gm3Vnbd16j21f7TPEBPBmkwxoqi6jqVbbFaj3HydYRT3x4IO-1IVsHF9iE5qpgApl6fxfN5MMNHFVw7NIhvRqvZ7YoB1jMl1S3nseh52fc~PlBvDm1a1keztkDHVDSUnVchCRXwmbpu0rPzPhl4wD84B5XO1UfGi9T28YP67KM73nrUU6MC3sVr6AtmqJ2QiWMcce4i9RoD9AlLAEmNqF~T6ci5w__" />
+                                <div class="item-title">
+                                    <h1>Gieo</h1>
+                                    <p>2022</p>
+                                </div>
+                                <p class="item-author">Ngọt</p>
+                            </div>
+                            <div class="item">
+                                <img
+                                    src="https://s3-alpha-sig.figma.com/img/84e0/d6b2/b3277d644d62286f34f80e6017a6029c?Expires=1717977600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nLdX5XA82YjDwvPcbhkfhATdejBvROVhsSjnAictO32idaVeRk5UHKqLaHxxFJzMANCoRDF2PKYAjBItlsTduPcCiV1EpAOZnwpm~feYrcLC0FtNQgGEh~Bg06OqW1Ae9-uFDQsNmlYuCI7gjOzSfyBoFZlQDwhOy~9~q10gMVtyt5L68Jgun6LRxzDndJ4OeDRaDRfbmPfBpH~UsWYoh-Ay5yHMS2jojnz0Zi5eq30Ra3XqjJY0P7gYn6UblGI33E-NlbgsrFzXMndHhc9~3-2~xpmvf60OnUjeqYYgE2mtwHyicsXVmsZGHMu3MSXv0rleDlOCrNPa293HTnVtVw__" />
+                                <div class="item-title">
+                                    <h1>Suýt 1</h1>
+                                    <p>2024</p>
+                                </div>
+                                <p class="item-author">Ngọt</p>
+                            </div>
+                            <div class="item">
+                                <img
+                                    src="https://s3-alpha-sig.figma.com/img/276e/1f39/21a9a5f52199a97a808e588657a4508d?Expires=1717977600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=H5lTFSpT56inTOPb4DCcxsj0v2S87Pj-Gx7CIvYgxowmb08hp8FaIhDyguzvHAaqi~f8ZxqbE2GJe3wl-GKSv4Aysw1Jw3PZBqUxaYGJaa~FPlDPJt4DTgm9viuP-BMgHlfUeU~Qz3~JLE8W3WMdjXQYsdGVfV64l1HX39i7iGpH5oSL3jiVP94yMehZu1F4SbMIHe0Hd6RIHYixMa2gZBja2wlHvHLZnLVFoH7EC-67p9HFRdihZisc03oZLJUYvSeV6iUcluzqG1MHKtwYHNtzwdtigoJKA1Sbyf7yXIcmWoeYyX-e5zeYEeRCvnkkF6SL8p2RE64fvf991KcWdQ__" />
+                                <div class="item-title">
+                                    <h1>Giấy Trắng</h1>
+                                    <p>2022</p>
+                                </div>
+                                <p class="item-author">Thắng</p>
+                            </div>
+                            <div class="item">
+                                <img
+                                    src="https://s3-alpha-sig.figma.com/img/dced/ba27/346658510b878ac68d336c1e37058120?Expires=1717977600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dLHZRBiN38d9NHBE3kBFBKBAu0v37AuCCpAC~dCgg0CqK0FnGwjXDtJMTyIDEGUW9A6903~Jm~x9aomhWXVOuTNfZodC9DNgWM7xExiMJub2vGdkdsppOIqCNYPBruulVqSvcumUs~wABHwneb8cCBswL148Ujjq9p8es-lejx8T952Tyy3KSlFCBy0-grXuMQctbfpG-57LhARZaYdHpcuBlw~gKD3t7JHPSWlIY2yjsWjj4c5DQ~Aj5pcU7Vf9o4y5T18qMRBlrVi8l-PgD6seBSYbOiivUppv525-paOOV45~qJM2SY6sR8JREPqfBcRIDWGGQMJHzdQ19JTSGQ__" />
+                                <div class="item-title">
+                                    <h1>Cái Đầu Tiên</h1>
+                                    <p>2023</p>
+                                </div>
+                                <p class="item-author">Thắng</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div id="single">
+                        <h1 class="section-title">Single</h1>
+                        <div class="list-item">
+                            <div class="item">
+                                <img
+                                    src="https://s3-alpha-sig.figma.com/img/5a9e/86c8/0ccd5f1b633aebe4862a6c25d20177dd?Expires=1717977600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hTJ38TkxQxXVuTfVtezHYjapuXfYKUr~sc0UZv4pJR6De1rVCDIAGIznRyCgRmxTlmRfrrtSFmiKgYpmjSDpS6oNjP2CcLB-k2pc0sG0TaLJmpbAy7YbAKzMuoP~IampyS2g92l1zIhgmDaO~-AL24wRYl9JoE1DwJ2eyBKP0eePCz7E~Q1~Sa1ayu~OTeJTQbkWbwKnTraJ9tDoHXQde-sgarpX~3k1UNJcoRvS4WcqTcxp--~bHtJD8O11c5AdfzE~4TEQl-hhcHDt07kNmUnpuPCZeRKKKb0~4c2fdg0q5-tUmcb6gNQMKWsG3wirdFmu6GyaCDHZyI-DZcDahQ__" />
+                                <div class="item-title">
+                                    <h1>Tìm Người Bình Thường</h1>
+                                    <p>2020</p>
+                                </div>
+                                <p class="item-author">Ngọt</p>
+                            </div>
+                            <div class="item">
+                                <img
+                                    src="https://s3-alpha-sig.figma.com/img/6dc2/303b/329cf8656f5cfe8c570d27202e9be1f4?Expires=1717977600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KULiSJfFpieeEV~XCTrNKIdsvpMimutlpihP6xGGZ-cyp9j18mGvEYjbtP8PVEQ2SQ2-bN6NsLkV~cl1VWHLbBCfFiUkqeQpIvo4TY3EcU3co~U4roYwo0c63pzlrYH4IFUb5WHTjso4V8lDRfo3KcqmPubVYZiby-5Bxin-rhwva~AuZGSLnn~QIvp97tnTPs~S~b1H6XmiAwgrDgkPKHG8sTmcIdOAwEUBqYormGB0c9y9wvBp61HahtpEpzK3mvwswxt0z94ECXqJOBmz-QTA38v~4qljz4tVV1A~JLmaaa5L4BiZhCaMV0IRdxM-ZliZcfwvOko~0kC~fLspXw__" />
+                                <div class="item-title">
+                                    <h1>Để Quên</h1>
+                                    <p>2021</p>
+                                </div>
+                                <p class="item-author">Ngọt</p>
+                            </div>
+                            <div class="item">
+                                <img
+                                    src="https://s3-alpha-sig.figma.com/img/f1ed/cbe9/482c444870b2da06b693b9d5200e33aa?Expires=1717977600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=B8GsmH~sbQOJMPE3GP-WK-iI0EcRhflC22Hqy6-k5ZalQOkpn6axHp1i6faxSBduPy06Q9qUpZM-DFvg~UdVHUCNoYu20KTgfTjjMEg83ULIVKqJr4tX1abvG4X2UwTKKcGHpg3-Vfbx7APOA7LawnhOs492ozFtUNkrQHuJzHvBc41MkP2vmMVh6uf1Swg1QseEeCvRdDRHj39~1WOUdug0zBMELm-G25t1rk4FqZjwKFevSKNOrVuZ3Bp4BW00YhTdw8-S6XvpM8HDmydm5D-Xlsk3X3keOsPh3pCqt3r3I8qGvjIHaXZxrrgI74QciEkrTuCrKmQ6pyi05eqCLw__" />
+                                <div class="item-title">
+                                    <h1>Đốt</h1>
+                                    <p>2020</p>
+                                </div>
+                                <p class="item-author">Ngọt</p>
+                            </div>
+                            <div class="item">
+                                <img
+                                    src="https://s3-alpha-sig.figma.com/img/f4bf/c47b/3255b8f703820d621c8e5be79def35bb?Expires=1717977600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nipeob5~kWF9RaxTEjleXE6-GtlQf1FTRJgh9059FD7o~R7-muiV4USLaFJMWeW1NB37sQX4MUNhvt-mCAqP7-fLgrh1Z~A6diCY~5t3NeRMrVkTK3NCvePbIfYZdOBN6d5obY9mGWf4IIaoDLp7SjYjY5WE0wRw6NkfEZrkdBMwqO8aXNOlGzkR0MxKQn22cB1lsz7c8bZ7Y1fI-pMSf4nNc8n0yseq23qIcQ4zlY2pV5KncalTjCgkb3b72xD9YWWXeDua-aEUq1M06YAzTcVv7OOd~qWqwo48-V4SWNvBz1QqRO3pOXlOFfJoKIAGpXM-~LOPcUq3lmr47GHBGQ__" />
+                                <div class="item-title">
+                                    <h1>An Thần</h1>
+                                    <p>2021</p>
+                                </div>
+                                <p class="item-author">Thắng, Low G</p>
+                            </div>
+                            <div class="item">
+                                <img
+                                    src="https://s3-alpha-sig.figma.com/img/8918/18d1/33947ffdef26d1a10a4afbb9f4417de0?Expires=1717977600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nvIJuY-NueBINGh0iA3j4KLCoYSf5-Q3W0E~-BTjHyJqfPtRlpVh2pMRmnXQ04v0-pK4sqh2IxfEkoOas2h5HLPTTjKs9LKtfpCksREhq2FOXwtIPXIFsAAY4EqI7BkcSnuETF7arzPdcy2DRjuz5WV3ljW4oHJzxtfdEGzNWkXW63UUhahWLEvV56Vv1MJk83Y9dW23cTklgWCwuF2S-7H9lSxfmWLRsZnofv6YeMZ922KbUumImFrqi--5oWoYfM74GkgIwbQeDtFV2RHJN3eeB2D2TWBI7ztfpuuPlJ1I6oJWZKK1W-VYcHh7GyWE-4a6tqNcFUi89yAAJtxODw__" />
+                                <div class="item-title">
+                                    <h1>Đám Cưới</h1>
+                                    <p>2022</p>
+                                </div>
+                                <p class="item-author">Thắng, Mimetals</p>
+                            </div>
+                            <div class="item">
+                                <img
+                                    src="https://s3-alpha-sig.figma.com/img/a4ba/4c87/aaf027cd4156d82acc8953da0ac4881f?Expires=1717977600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=X970zvRrfNLr9sO0FD4fDcjeUyTvysU4-fI0sydGuiJwuaDSZegW-uI56YKVT-bEFBdzaNpeSK3JlBDDoXpWx0~YRZys4AgOHt9SpYenL6Ckc7DzmBMCOqIAtVvmir9Rjyq74vTmKvU5qqxTk8WNsiKqoNlhYiDcEXWYrrEGJYPSfI8jdWScMNPWm8dr5sPHD3TGBLrtCGk8whbyCNgnyapsKN-5LAj0aAvz2AgYfntnK77eEWExFc9ce09HJKxEWA6RC0U8dPBj0822GY3T2je~6NnkN0WBlUyBmRPHtX47bFdvj9iaBbs1FPRWiw5yN8vGNZrVuXTx5nf3JngS1w__" />
+                                <div class="item-title">
+                                    <h1>Hình Trái Tim</h1>
+                                    <p>2022</p>
+                                </div>
+                                <p class="item-author">Thắng, Vũ Thanh Vân</p>
+                            </div>
+                            <div class="item">
+                                <img
+                                    src="https://s3-alpha-sig.figma.com/img/f006/bbe3/8abc09ddc1e8c9b14a51cb0e560c1f9a?Expires=1717977600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YhV21281iuo5kkPCYdFRlGk1Q8OX2xfFKUpnqcNyJAWNfMxUbMuqLMSUMXrTxAnVIZoPSIe9T9zfgIURNyo5tCvNlr-b18q7ipT8ABRALMSKT1XtzjF0G~1cXQmcMVs9oIvAH6BMHVirALNf4tFQXbPfb17jBx3ugrhsIhVVyPHAc-n9be0ARWQQbRWJMkB3upZrQd-eYYgGzZz1Cktw8Ngxotg3Dhk1zImdgKsLzhE-UWEQlD8N2Qf2gEPO6NWvNXPn6iflXqQVtK3ZyQiLRSYFTn1pgKoyhNKnujd3dLmpQbaZZf~i3tTdl9RPQjpogUIexkQc3c4y8ZGSoRmfbg__" />
+                                <div class="item-title">
+                                    <h1>Đã Xem</h1>
+                                    <p>2022</p>
+                                </div>
+                                <p class="item-author">Thắng</p>
+                            </div>
+                            <div class="item">
+                                <img
+                                    src="https://s3-alpha-sig.figma.com/img/9c31/1394/5634ef26e5f220af832af0ee29db8236?Expires=1717977600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kZIvu8tbYarYHrtCMgsW3rn0qm7uVVeXme5ho62xVcwndiDnPHxDHysL47U~7OssTn0sUymn1RIrUXxAPRQ4GkEwGS7X9aUt2NEJXhVTlMnqW5YP7nsUuN91z6tjuSbhSSB1AGDtdqqq0FkYQ6uQe3GQIofaeuJOTA3zuKoWYbw6C~-sdiX8OzXzMdGbQgRcWPWsexABiQf1z425QvbEKZVlNvVPXYEGpMO1zlcZLCbNJyvSYW5kMZcOI~GZQOCtB9ZzH-Qi9ZTqfKYhusEH5J6k2ojxF--X2rIqFj-TGCa05yKioQ1cQqM0KltIXW-DirsWfeThmDoaW6933njrOg__" />
+                                <div class="item-title">
+                                    <h1>Hái Sao</h1>
+                                    <p>2023</p>
+                                </div>
+                                <p class="item-author">Pĩel Neko, Thắng</p>
+                            </div>
+                            <div class="item">
+                                <img
+                                    src="https://s3-alpha-sig.figma.com/img/13af/44f6/3c1b080dbc49a6eaaf01b3d39618bd53?Expires=1717977600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Urd-ba5mAf9nV8kFSlbYu309pkv6hm~G-oVW~xL7Mv2WdlqYZ~9AzLET7NB0diiKW1qP9gVfmCIrqFUhTeXOQT1xVtTZHqeklQ17mfPuy9COc2qIXWlqG8hOatZf5f~UPuDAM5jMj3GavbWCq1QXQxDykeZubS4EOV9ZTS05SPB3nn~CuabQXKaH~ePSKX-7mtXjRhBFAJZanVbfWflxxB3DUjhi7yB7UdbTliP4s23VyW99n9aB8fgxzZABZsDkpbd0Di~zQ8qFbb0acI-jvA~Ssnl6rXuUvIRmMCPmwAzvA0st1uhxIUNUsY0S9RkEima~JHsVoAGH94bnbRe-Vw__" />
+                                <div class="item-title">
+                                    <h1>Trái Tim Của Lâm</h1>
+                                    <p>2023</p>
+                                </div>
+                                <p class="item-author">Quỳnh Anh, Thắng</p>
+                            </div>
+                            <div class="item">
+                                <img
+                                    src="https://s3-alpha-sig.figma.com/img/a9cf/c2ec/5eaf767925b4244f293f550fa1e39070?Expires=1717977600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SS-9q2c0EAnrVUUz2YbUUY4iLbqB8s1XF8vg75--p-Jj5yTYuDjsH0v4T7k-25aFkQaet-6CvwNrC~JySauUnr5fPA0A~ITU-sWy5BLfDdeNi~~mfUlAQwqid-ZY139S~9bM0O~Yk4XsI3Yq25EoxqiJSHbIX7hKbl6G5wVaoVjSolqxieKe6MvRDZzqQFuh7G3VJ8hK3R6K5HhkX62hzzRB5TY-9Xyc6K71ggz24X69anYH9BVAcZtYLCQ70Df134b-~tlBfJLX6wYbYCxPfgBXHy7OPwxP8lZjpu-AgTJj3ZCscHAqrZdYl4iKyyPUjlOE5Pt7YMWawLFv3e74hQ__" />
+                                <div class="item-title">
+                                    <h1>Tiếp Đất</h1>
+                                    <p>2023</p>
+                                </div>
+                                <p class="item-author">Low G, Thắng, Vantacrow</p>
+                            </div>
+                            <div class="item">
+                                <img
+                                    src="https://s3-alpha-sig.figma.com/img/cccc/23e0/6940a4e2c58a445cf57485ace1607da3?Expires=1717977600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bN5hvX1IJad688afSS-5hYYYbyPaNIJ8O6MMltD5IeknenQogB-TcxESOq-Ps0a3XSwZqLtr7uHi5IxbBxtdkzs58HI2hqKP4yzR~2qsjWWmc7nc-lXVIORTGqqPLE0bCRc24OCtNnUzK2B1K53wTdCxwcAt8mX2Ckht001U5W6w-V13Px41Jnz47gRz0lXRrPlC~2qnCdUQvnUeIX68JKTLkQRy1tjGhWneeCRoRAU0oH9jf3RIb9PFFOtnT0zOhH7ZXSWH~CgMZavKTfsjwwgQy644AbuH8N6Hz~axy2DVxYVE2qWN9R6eEdlB~0azWBnSVrsXLAhC8EwWZV6Ymw__" />
+                                <div class="item-title">
+                                    <h1>Lâm Gay</h1>
+                                    <p>2024</p>
+                                </div>
+                                <p class="item-author">Thắng</p>
+                            </div>
+                            <div class="item">
+                                <img
+                                    src="https://s3-alpha-sig.figma.com/img/cccc/23e0/6940a4e2c58a445cf57485ace1607da3?Expires=1717977600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bN5hvX1IJad688afSS-5hYYYbyPaNIJ8O6MMltD5IeknenQogB-TcxESOq-Ps0a3XSwZqLtr7uHi5IxbBxtdkzs58HI2hqKP4yzR~2qsjWWmc7nc-lXVIORTGqqPLE0bCRc24OCtNnUzK2B1K53wTdCxwcAt8mX2Ckht001U5W6w-V13Px41Jnz47gRz0lXRrPlC~2qnCdUQvnUeIX68JKTLkQRy1tjGhWneeCRoRAU0oH9jf3RIb9PFFOtnT0zOhH7ZXSWH~CgMZavKTfsjwwgQy644AbuH8N6Hz~axy2DVxYVE2qWN9R6eEdlB~0azWBnSVrsXLAhC8EwWZV6Ymw__" />
+                                <div class="item-title">
+                                    <h1>Nó</h1>
+                                    <p>2024</p>
+                                </div>
+                                <p class="item-author">Thắng, Datmaniac</p>
+                            </div>
+                            <div class="item">
+                                <img
+                                    src="https://s3-alpha-sig.figma.com/img/e022/a1cc/2a7d1d74717d7923833a5e2c8e4fe255?Expires=1717977600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ggHXF5jlxWxtJCznqHZ5JMKDfm7yHh713AC9X~jPke3wXCoimGGIHBDDpez8hW-YG-2xcWKekd5bLG78QEJFCoMcdI5IsDhjY8oBeUsVipjg7HE0jq88TgkJ7Bbw7cG4YpW5Pclkfl-a7BFON4GEDJtmbX~Ux4xOwImce37j67s-aUXLgEbPGcPRORdygIhddukTLJWwkKPnHNAEDUugelCrJFZC44xgg-L07LSRmGnaDSB4SNU6Cx4jh4ycR8RL4bPgitF-lSikDG5DYDD2ba-VpIHq2kzKZ0d-pS35isQmwdfxjdhi8U6ywcQBDJWV16B0GCjKtDcwpLl~Lq9NOA__" />
+                                <div class="item-title">
+                                    <h1>Cho Tôi Làm Gay</h1>
+                                    <p>2018</p>
+                                </div>
+                                <p class="item-author">Ngọt, Đen</p>
+                            </div>
+                            <div class="item">
+                                <img
+                                    src="https://s3-alpha-sig.figma.com/img/7825/bca0/c3901ebfd155646154e8c397dc6bdb17?Expires=1717977600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=D7Oz5YUcILnrXPT-pnckm2psuNowGHtvhijtAi2Q5SyNBJD9eRwBzLrk1SyAnGAR2xeDdMNwWzpvtvrtVxXDWXojtqJeaz1~WquUnh6x4DYOkt7ZOnHuIrL8zwirCshywsdsuG~4LL8Fn2ukrdY2MHzxqNIfqxuExJHLDL7YO2mx~kNj0qVxpePTRdpN0jyZUIk-zaqkE33GZwKMRbyVzXifHNtbP5mtoIt14jjvbY40zX8hCGXcasYFxxlHMn3d91Dg4K7YFtl-eWAsMblM1Llq~XIlzSTqugIp19zeKloXVqvkQIXEFRFaAhW73wwWO-n0q8u-4p4yXOkcYsPXWg__" />
+                                <div class="item-title">
+                                    <h1>Xuân</h1>
+                                    <p>2024</p>
+                                </div>
+                                <p class="item-author">Mối, Nam Anh</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="mv">
+                        <div class="mv-header">
+                            <h1 class="section-title">MV</h1>
+                            <div class="btn-scroll">
+                                <i id="left-scroll" class="fa fa-arrow-left" aria-hidden="true"></i>
+                                <i id="right-scroll" class="fa fa-arrow-right" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="pop-mv">
+                            <div class="mv-item">
+                                <img src="https://s3-alpha-sig.figma.com/img/ee28/04d1/f26ca73e243386531663596936392383?Expires=1717977600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=VliZBo5-lbhwJSdntx-W-4D~Nu0Lkkm1S8AYPiMRNnglDKps2Mi~uUKFQl4wk6zi9WMP-nFA1ImsntyasV8rc1bj2-nFt3pEH~57sP9A-1izqSNWLMpFKtW7egGFOe36G5LCRv8wC3Sb8UoKsyJW6wUdB57Rl9WZ1lGNv0nnxnkoz0evhUAg4rLRkd8t7WxvUJE0S0UwX8b~w~1PoK5E7cCNro~qiP-MwlihxkaudEBWFSFJx6B0pu7kglUp2wcE-q0~OWv7fX-Adte10YMS6-tvjE0Q90Kii30oHXqq7uSgQJpj7zPc8pZUk2eeYRU70lVlgQlrkNKsIW-1DzUnRw__"
+                                    alt="img" />
+                                <h3>Lần Cuối (đi bên em xót xa)</h3>
+                            </div>
+                            <div class="mv-item">
+                                <img src="https://s3-alpha-sig.figma.com/img/6177/b245/0cb913f4f17d2f516492e8592bf9c677?Expires=1717977600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SHCqDeg1LN4TEgQhgOUNPpht9DOTBzRTrAatQrPQ0IvfhPKbNuUSYawz-vF43022pcT1Ucj7C7VVI7OHwBFHcIV0kovMQ0DjFOSF0ecmULJr2iwNcX-HfZepv3~c9qiXIjMA6wzEC1x--NelnxYKo3fNWUKjJJdzE69ZJicLdDb7qSDbXK6XFU7SOxqeTG5dgaiG8eOFUti4ljG0AOSTfxgpfhw6eSkLOyCJT8hwbyJ2CgwFvZgMW8~9gBh5IMawepZumSoiIqfTGCvZB0CzX-K8qKbNlGcvzzXgHe991xtwMJe06sthJZWrX~bO4K4-xUOnQCvSZtJrqgXBcaXJSA__"
+                                    alt="img" />
+                                <h3>Chuyển Kênh</h3>
+                            </div>
+                            <div class="mv-item">
+                                <img src="https://s3-alpha-sig.figma.com/img/80cc/4208/055bc3cca71a3749f208e090f9c9f10e?Expires=1717977600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=jXYbZdzCWSpSGg5D~FNbUBCBu-DqmeY8En8~1v6qTN-8t2kEx6kHcVp4O7gTEyYgC1BZfp9i6KshMm3V-SLqRMpb0PDiJx~C~~T0-Y9YUxoxHrb54OF6kDIQh1w5e-SRxVfImHDdxAwoJwhSQljdtHEIKcqcyg2YL4wgbX7LT5Yon49JCo41r~qRVFQjJAMq4JK2FYyyPxdvtT75VblPYS-2iGTvO~LbrRgCSM88LyUaUMkRvdiC6gUx766UKY1eSKUWxsa6debSqBL7UUb0nUw19iFggVvwaKvKgPbidTINDmRUHfNSISpdzB3J5Sar-UJKpqoigmlBAEd1SarAPw__"
+                                    alt="img" />
+                                <h3>Mếu Máo (T.T)</h3>
+                            </div>
+                            <div class="mv-item">
+                                <img src="https://s3-alpha-sig.figma.com/img/986e/c294/a8b9349a2cbeb6cdda3952403f626a2d?Expires=1717977600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NPzgLhom-jW5alDgRFo-G9AEvSkjknqcD70zCgj5mlonm1yKWsTryOHevEOym0J8cEuHrwfu-uKEDBQYBBoul5pVZb0TPpIfkh0oElXcfdkwLxEbJH-t0uRrXoxRv3QvK8dyVCznk3sLPNB1YhCrUzvppWUBvIYo1gwONBEubJAA-7rrjeSTLMZ8bV4VFYjPGHTKE13Gz5M-7APDC6daHDq1MAFiz9RP~AtGfoIKX233is864lxUvMx1f-bkKioJBUnqEn5OejeQ0Xlu52lmwvREdhob730fb2jsGMMLQj2k7XTaQ06sXLxxtyUm6AuNFqY2Uz3FlMAIEIccSFNnFQ__"
+                                    alt="img" />
+                                <h3>(Tôi) Đi Trú Đông</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="footer-content">
+                    <div class="footer-info">
+                        <p>Địa chỉ: Hà Nội.</p>
+                        <p>
+                            Hotline: 090 219 58 07 <span></span> Email:
+                            hoangvp102@gmail.com
+                        </p>
+                        <p>
+                            GPKD số 01D8051722 cấp ngày 12/10/2023 tại
+                            UBND quận Hai Bà Trưng
+                        </p>
+                    </div>
+                    <div class="footer-logo">
+                        <a href="http://online.gov.vn/Home/WebDetails/110866">
+                            <img src="https://s3-alpha-sig.figma.com/img/9bf2/754a/0285257a46fdbde11708a4f2bffe5adb?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kOulBtdv45BQBP9Reo0PTp5zYPOHGWbgn02QughrN20Cuab2moD6k~yViVORA6tzj0D64GD8Q3uUqqG30mpX5iiCSRsYspcr3dcbyIYiXxSabnC3EUqyYFKo5m5EBc~jr2wb0xbAaWs1DdWluifcRfEwtX6RfEQKROIzJu06tYlcW~T-nILW7~50YqIJCYLcwZqKylxMJNiWa8SSDNBnHgozM3z-7znur8pd5CnKmDvMEBlSYGGSPbJGVbGbh4Ic~WwxHeVmU6Iha7r3VE5rzVxwUEHNhQz8tr-yIQwlNhZfD8Nr--01WKqiZm~OIh86YNhYF8~WY4mYsGN3togrxQ__"
+                                alt="footer-logo" />
+                        </a>
+                    </div>
+                    <div class="footer-link">
+                        <div class="footer-social-list">
+                            <a href="https://www.facebook.com/bannhacngot"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.youtube.com/c/Ngß╗ìtband"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="https://music.apple.com/us/artist/ngß╗ìt/1291453081"><i
+                                    class="fa-solid fa-music"></i></a>
+                            <a href="https://open.spotify.com/artist/0V2DfUrZvBuUReS1LFo5ZI"><i
+                                    class="fa-brands fa-spotify"></i></a>
+                        </div>
+                        <div class="footer-text-link">
+                            <p>@2024 Lâm Huỳnh</p>
+                            <ul>
+                                <li><a href="#">Terms</a></li>
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Cookie choices</a></li>
+                                <li><a href="#">Do not sell or share my personal information</a></li>
+                            </ul>
+                            <p>IF YOU ARE USING A SCREEN READER AND ARE HAVING PROBLEMS USING THIS WEBSITE, PLEASE
+                                CALL
+                                0935388971 FOR ASSISTANCE.</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <div id="right">
+            <div id="music-bar">
+                <div id="music-img">
+                    <img id="music-img-img" src="./assets/img/music/album-3.png" alt="img" />
+                </div>
+                <div id="music-content">
+                    <div id="title">
+                        <strong>Lần cuối đi bên em xót xa</strong>
+                        <p>Ngọt</p>
+                    </div>
+                    <div class="player">
+                        <div class="control">
+                            <div class="btn btn-repeat">
+                                <i class="fas fa-redo"></i>
+                            </div>
+                            <div class="btn btn-prev">
+                                <i class="fa-solid fa-backward-step" id="playBack"></i>
+                            </div>
+                            <div class="btn btn-toggle-play">
+                                <i class="fa-solid fa-play" id="playMaster"></i>
+                            </div>
+                            <div class="btn btn-next">
+                                <i class="fa-solid fa-forward-step" id="playNext"></i>
+                            </div>
+                            <div class="btn btn-random">
+                                <i class="fas fa-random"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100" />
+
+                    <div class="timer">
+                        <div class="duration">2:10</div>
+                        <div class="remaining">-3:10</div>
+                    </div>
+
+                    <div id="lyrics-box">
+                        <div class="lyrics-title">
+                            <p>Lời bài hát</p>
+                            <button type="button">
+                                <a href="#">Show lyrics</a>
+                            </button>
+                        </div>
+                        <div class="lyrics">
+                            <p>Nhìn quanh lần cuối</p>
+                            <p>Rừng thay lá ngậm ngùi</p>
+                            <p>Rừng không báo tin vui gì</p>
+                            <p>Chỉ cố che màn mưa</p>
+                            <p>Lặng im như lá</p>
+                            <p>Em không nói một lời</p>
+                            <p>Không khóc không cười chỉ</p>
+                            <p>Cuốn theo chiều gió đưa</p>
+                            <p>Dễ như nuốt thật nhanh ngụm cà phê cuối</p>
+                            <p>
+                                Dễ như cách em xua bàn tay để che tiếc nuối
+                            </p>
+                            <p>Dễ như cách em quay lại quay lại quay lại</p>
+                            <p>Chỉ để buông lời tha thứ nhân từ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const left_scroll = document.getElementById("left-scroll");
+        const right_scroll = document.getElementById("right-scroll");
+        const pop_mv = document.getElementsByClassName("pop-mv")[0];
+        
+        left_scroll.addEventListener("click", () => {
+            pop_mv.scrollLeft -= 300;
+        });
+
+        right_scroll.addEventListener("click", () => {
+            pop_mv.scrollLeft += 300;
+        });
+    </script>
+</body>
+
+</html>
