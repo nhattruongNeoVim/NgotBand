@@ -892,19 +892,19 @@ footer {
     display: none;
 }
 
-#mv .mv-item {
+#mv .pop-mv-item {
     width: 240px;
     margin-right: 40px;
     display: flex;
     flex-direction: column;
 }
 
-#mv .mv-item img {
+#mv .pop-mv-item img {
     object-fit: cover;
     border-radius: 8px;
 }
 
-#mv .mv-item h3 {
+#mv .pop-mv-item h3 {
     width: 100%;
     color: black;
     font-size: 1.5rem;
