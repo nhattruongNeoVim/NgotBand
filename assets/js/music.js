@@ -1,7 +1,10 @@
 const song = document.getElementById("song");
-const left_scroll = document.getElementById("left-scroll");
-const right_scroll = document.getElementById("right-scroll");
+const left_scroll_mv = document.getElementById("left-scroll-mv");
+const right_scroll_mv = document.getElementById("right-scroll-mv");
+const left_scroll_album = document.getElementById("left-scroll-album");
+const right_scroll_album = document.getElementById("right-scroll-album");
 const pop_album = document.getElementsByClassName("pop-album")[0];
+const pop_mv = document.getElementsByClassName("pop-mv")[0];
 const playRepeat = document.querySelector(".btn-repeat");
 const randomBtn = document.querySelector(".btn-random");
 const music = new Audio("./assets/music/lancuoi.wav");
@@ -140,11 +143,19 @@ const songs = [
     },
 ];
 
-left_scroll.addEventListener("click", () => {
+left_scroll_mv.addEventListener("click", () => {
+    pop_mv.scrollLeft -= 300;
+});
+
+right_scroll_mv.addEventListener("click", () => {
+    pop_mv.scrollLeft += 300;
+});
+
+left_scroll_album.addEventListener("click", () => {
     pop_album.scrollLeft -= 300;
 });
 
-right_scroll.addEventListener("click", () => {
+right_scroll_album.addEventListener("click", () => {
     pop_album.scrollLeft += 300;
 });
 

@@ -36,7 +36,6 @@ a {
 
 #center {
     width: 60%;
-    height: 300vh;
     margin-left: 18%;
 }
 
@@ -409,7 +408,6 @@ a {
 
 #layout {
     width: 100%;
-    height: 80%;
     background-color: #fff;
     margin: 8px auto;
     border-radius: 8px;
@@ -427,9 +425,9 @@ a {
 */
 
 #header {
+    height: 70px;
     display: flex;
     justify-content: space-between;
-    height: 4%;
     align-items: center;
 }
 
@@ -546,7 +544,7 @@ a {
 */
 
 #banner {
-    height: 22%;
+    height: 400px;
     display: grid;
     grid-template-columns: 220px auto;
     grid-template-rows: auto auto;
@@ -626,6 +624,10 @@ a {
     height: 100%;
     table-layout: fixed;
     border-collapse: collapse;
+}
+
+#album table td {
+    height: 80px;
 }
 
 #album table th {
@@ -708,14 +710,14 @@ a {
 */
 
 #other-album {
-    /* margin: 40px 0px; */
+    padding: 40px 0px;
 }
 
 #other-album .scroll-bar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 20px;
+    padding: 20px 0px;
 }
 
 #other-album .scroll-bar .btn-scroll {
@@ -767,8 +769,8 @@ a {
 */
 
 footer {
+    height: 425px;
     background-color: #000;
-    height: 19%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -854,4 +856,63 @@ footer {
 
 .footer-info p {
     color: #999;
+}
+
+/*
+    MV
+*/
+
+#mv {
+    margin-top: 10px;
+}
+
+#mv .mv-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+#mv .mv-header .btn-scroll {
+    font-size: 20px;
+}
+
+#mv .mv-header .btn-scroll i {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#mv .pop-mv {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+#mv .pop-mv::-webkit-scrollbar {
+    display: none;
+}
+
+#mv .mv-item {
+    width: 240px;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+#mv .mv-item img {
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+#mv .mv-item h3 {
+    width: 100%;
+    color: black;
+    font-size: 1.5rem;
+    font-family: Inter;
+    font-weight: 600;
+    word-wrap: break-word;
+    padding: 10px 0px;
+    overflow: hidden;
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
 }
